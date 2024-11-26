@@ -720,7 +720,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
     ET.PERMANENT: Alert(
       "Poor GPS reception",
       "Ensure device has a clear view of the sky",
-      AlertStatus.normal, AlertSize.mid,
+      AlertStatus.normal, AlertSize.none,
       Priority.LOWER, VisualAlert.none, AudibleAlert.none, .2, creation_delay=600.)
   },
 
